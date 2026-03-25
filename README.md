@@ -35,7 +35,15 @@ This tool only supports the Jenkins DOM structure discussed in the request:
 From the repository root:
 
 ```bash
-npm --prefix tools/jenkins-option-finder test
+npm test
+```
+
+## Build
+
+Regenerate the distributable bundles from `src/*.js`:
+
+```bash
+npm run build
 ```
 
 ## Package Safari Extension
@@ -43,8 +51,10 @@ npm --prefix tools/jenkins-option-finder test
 From the repository root:
 
 ```bash
-npm --prefix tools/jenkins-option-finder run package:safari
+npm run package:safari
 ```
+
+This command rebuilds `dist/jenkins-option-finder.bundle.js` and `safari-web-extension/content-script.js` before creating the zip archive.
 
 ## Load Into The Jenkins Page
 

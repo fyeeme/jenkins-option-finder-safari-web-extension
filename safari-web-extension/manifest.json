@@ -15,7 +15,7 @@
     }
   ],
   "action": {
-    "default_title": "Jenkins Option Finder",
+    "default_title": "Branch Finder",
     "default_popup": "popup.html"
   }
 }

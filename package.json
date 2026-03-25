@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "description": "Lightweight finder UI for Jenkins git parameter select options",
   "scripts": {
+    "build": "node ./scripts/build.js",
     "test": "node --test ./test/*.test.js",
-    "package:safari": "mkdir -p ./dist && zip -r ./dist/jenkins-option-finder-safari-web-extension.zip ./safari-web-extension"
+    "package:safari": "npm run build && rm -f ./dist/jenkins-option-finder-safari-web-extension.zip && zip -r ./dist/jenkins-option-finder-safari-web-extension.zip ./safari-web-extension"
   }
 }

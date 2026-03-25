@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Jenkins Option Finder",
+  "version": "0.1.0",
+  "description": "Find and cycle Jenkins gitParameterSelect options with Enter.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://kjjenkins.yijiesudai.com/*"
+      ],
+      "js": [
+        "content-script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Jenkins Option Finder",
+    "default_popup": "popup.html"
+  }
+}
